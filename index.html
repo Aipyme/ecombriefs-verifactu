@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Diagnostico Veri*Factu 2027 | EcomBriefs.io</title>
+      <meta name="description" content="Tu facturacion esta lista para Veri*Factu 2027? Diagnostico en 3 minutos + PDF con score /100 y plan de accion priorizado.">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f0f2f6; color: #1a1a2e; }
+                .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        header { padding: 20px 0; background: #fff; border-bottom: 1px solid #e5e7eb; }
+                header .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 24px; font-weight: 800; color: #1a3a5c; text-decoration: none; }
+        .logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, #1a3a5c, #f7a600); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 18px; }
+                  .hero { padding: 80px 0 60px; text-align: center; background: linear-gradient(180deg, #f0f2f6 0%, #e8edf5 100%); }
+                  .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
+                .hero h1 { font-size: 42px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .hero p { font-size: 18px; color: #555; max-width: 650px; margin: 0 auto 32px; line-height: 1.6; }
+        .btn-primary { display: inline-block; background: #2cb67d; color: white; padding: 16px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: background 0.3s; }
+        .btn-primary:hover { background: #239e6c; }
+        .form-section { padding: 60px 0; background: #fff; }
+                .form-section h2 { font-size: 32px; font-weight: 700; text-align: center; margin-bottom: 40px; }
+        .diagnostic-form { max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 14px; }
+        .form-group select, .form-group input { width: 100%; padding: 14px 16px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px; font-family: inherit; transition: border-color 0.3s; background: #fff; }
+        .form-group select:focus, .form-group input:focus { outline: none; border-color: #2cb67d; }
+        .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+        .radio-option { padding: 10px 20px; border: 2px solid #e5e7eb; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.3s; }
+        .radio-option:hover { border-color: #2cb67d; }
+        .radio-option.selected { background: #e8f5e9; border-color: #2cb67d; color: #2e7d32; }
+                .checkbox-group { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+        .checkbox-group input { width: auto; margin-top: 3px; }
+        .checkbox-group label { font-size: 14px; font-weight: 400; color: #555; }
+        .note { font-size: 13px; color: #888; margin-top: 8px; }
+        .how-section { padding: 80px 0; background: #f0f2f6; }
+                .how-section h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 16px; }
+        .how-section .subtitle { text-align: center; color: #666; margin-bottom: 48px; }
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+        .step-card { text-align: center; padding: 32px; background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+                .step-num { width: 48px; height: 48px; background: #2cb67d; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-weight: 700; font-size: 20px; }
+        .step-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .step-card p { color: #666; line-height: 1.6; font-size: 15px; }
+        .includes-section { padding: 80px 0; background: #fff; }
+                .includes-section h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+        .includes-grid { max-width: 700px; margin: 0 auto; }
+        .include-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
+        .include-num { background: #1a3a5c; color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+        .include-item p { color: #444; line-height: 1.6; }
+        .features { padding: 80px 0; background: #f0f2f6; }
+                .features h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .feature-card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+                  .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .feature-card p { color: #666; line-height: 1.6; font-size: 15px; }
+        .disclaimer-section { padding: 40px 0; background: #fff8e1; }
+                .disclaimer-section .container { max-width: 700px; text-align: center; }
+        .disclaimer-section h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #e65100; }
+                .disclaimer-section p { color: #666; line-height: 1.6; font-size: 14px; }
+        .faq-section { padding: 80px 0; background: #fff; }
+                .faq-section h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 48px; }
+        .faq-list { max-width: 700px; margin: 0 auto; }
+        .faq-item { border: 1px solid #e5e7eb; border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+        .faq-question { padding: 20px 24px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: #f9fafb; }
+                .faq-answer { padding: 0 24px 20px; color: #666; line-height: 1.6; display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        .cta { padding: 80px 0; background: linear-gradient(135deg, #1a3a5c, #2cb67d); text-align: center; color: white; }
+        .cta h2 { font-size: 36px; font-weight: 700; margin-bottom: 16px; }
+        .cta p { font-size: 18px; opacity: 0.9; margin-bottom: 32px; }
+        .btn-white { display: inline-block; background: white; color: #1a3a5c; padding: 16px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; transition: transform 0.3s; }
+        .btn-white:hover { transform: translateY(-2px); }
+        footer { padding: 40px 0; background: #1a1a2e; color: #aaa; text-align: center; }
+                footer .links { margin-bottom: 16px; }
+        footer a { color: #ccc; text-decoration: none; margin: 0 12px; font-size: 14px; }
+                footer a:hover { color: white; }
+        footer .copy { font-size: 12px; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .how-section h2, .includes-section h2, .features h2, .faq-section h2, .cta h2 { font-size: 28px; }
+            .radio-group { flex-direction: column; }
+              }
+    </style>
+              </head>
+              <body>
+                  <header>
+                      <div class="container">
+                          <a href="/" class="logo">
+                              <div class="logo-icon">E</div>
+                              EcomBriefs
+                          </a>
+                      </div>
+                  </header>
+
+                  <section class="hero">
+                      <div class="container">
+                          <span class="badge">New</span>
+                          <p style="color:#888;font-size:14px;margin-bottom:16px;">Sin llamadas. Resultado por email.</p>
+            <h1>Tu facturacion esta lista para Veri*Factu 2027?</h1>
+                          <p>Diagnostico en 3 minutos + PDF con score /100 y plan de accion priorizado.</p>
+        </div>
+    </section>
+
+    <section class="form-section" id="form">
+        <div class="container">
+            <form class="diagnostic-form">
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <div class="radio-group">
+                        <div class="radio-option" onclick="this.classList.toggle('selected')">Sociedad</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Autonomo</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Otro</div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Software de facturacion</label>
+                    <select>
+                        <option value="">Selecciona...</option>
+                        <option>Holded</option>
+                        <option>FacturaDirecta</option>
+                        <option>Sage</option>
+                        <option>A3 (Wolters Kluwer)</option>
+                        <option>Odoo</option>
+                        <option>SAP / Oracle / Netsuite (Enterprise)</option>
+                        <option>Excel / Manual invoices</option>
+                                      <option>Other</option>
+                                      <option>Not sure</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label>Como facturas</label>
+                                  <div class="radio-group">
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">ERP</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">TPV</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Excel</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">ecommerce</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">asesoria</div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Facturas/mes</label>
+                                  <div class="radio-group">
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">0-50</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">50-200</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">200+</div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Integras cobros (Stripe/TPV/banco)?</label>
+                                  <div class="radio-group">
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Si</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">No</div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Varias series/centros</label>
+                                  <div class="radio-group">
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Si</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">No</div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Confirmacion por escrito del proveedor (SIF/Veri*Factu)</label>
+                                  <div class="radio-group">
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">Si</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">No</div>
+                                      <div class="radio-option" onclick="this.classList.toggle('selected')">No lo se</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                              </div>
+                              <div class="checkbox-group">
+                                  <input type="checkbox" id="email-consent" checked>
+                                  <label for="email-consent">Quiero recibir el informe por email</label>
+                              </div>
+                              <div class="checkbox-group">
+                                  <input type="checkbox" id="provider-consent">
+                                  <label for="provider-consent">Acepto que compartas mis datos con 2-3 proveedores para que me contacten</label>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%;margin-top:16px;">Empezar diagnostico</button>
+                              <p class="note" style="text-align:center;margin-top:12px;">Sin llamadas. Recibes el PDF en tu email.</p>
+                          </form>
+                      </div>
+                  </section>
+
+                  <section class="how-section">
+                      <div class="container">
+                          <h2>Como funciona</h2>
+                          <p class="subtitle">En 3 pasos tienes claridad total sobre que cambiar y en que orden.</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Responde el cuestionario</h3>
+                    <p>3 minutos. Sin registro, sin llamadas.</p>
+                              </div>
+                              <div class="step-card">
+                                  <div class="step-num">2</div>
+                                  <h3>Calculamos tu score</h3>
+                    <p>Generamos un score /100 y detectamos los puntos de riesgo (software, procesos, integraciones, series, volumen).</p>
+                              </div>
+                              <div class="step-card">
+                                  <div class="step-num">3</div>
+                                  <h3>Recibes el PDF por email</h3>
+                    <p>Un informe claro y accionable para ti o tu asesoria (y, si quieres, contacto con proveedores).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="includes-section">
+        <div class="container">
+            <h2>Que incluye tu informe (PDF)</h2>
+            <div class="includes-grid">
+                <div class="include-item">
+                    <div class="include-num">01</div>
+                    <p>Score de preparacion /100 + semaforo (Verde / Ambar / Rojo)</p>
+                              </div>
+                              <div class="include-item">
+                                  <div class="include-num">02</div>
+                                  <p>Top 5 riesgos (impacto alto) explicados en lenguaje humano</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">03</div>
+                    <p>Plan priorizado: que hacer primero, segundo, tercero</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">04</div>
+                    <p>Checklist para hablar con tu proveedor/software o asesoria</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">05</div>
+                    <p>Plantilla de email para pedir confirmacion por escrito (copiar/pegar)</p>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+                  <section class="features">
+                      <div class="container">
+                          <h2>SEO tecnico y visibilidad de IA</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Analisis de Tiendas Impulsado por IA</h3>
+                    <p>Obten informacion detallada sobre la experiencia del usuario, senales de confianza, SEO y el rendimiento de conversion con un escaneo inteligente de IA.</p>
+                              </div>
+                              <div class="feature-card">
+                                  <h3>Deteccion de Problemas Criticos</h3>
+                                  <p>Identifica errores ocultos, advertencias y puntos de friccion que perjudican la experiencia del usuario y ralentizan tu flujo de ventas.</p>
+                              </div>
+                              <div class="feature-card">
+                                  <h3>Informes PDF profesionales</h3>
+                                  <p>Recibe una auditoria en PDF limpia y perfectamente formateada que es facil de entender y compartir con equipos o clientes.</p>
+                              </div>
+                              <div class="feature-card">
+                                  <h3>Hecho para tiendas online</h3>
+                                  <p>Construido especificamente para Shopify, WooCommerce y configuraciones de comercio electronico personalizadas para garantizar un escaneo preciso.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+                  <section class="disclaimer-section">
+                      <div class="container">
+                          <h3>Importante (para evitar malentendidos)</h3>
+                          <p>Este diagnostico es un checklist orientativo basado en tus respuestas. No es asesoramiento fiscal/legal, ni una "certificacion" de cumplimiento. Si necesitas validacion formal, te recomendamos revisarlo con tu asesoria/proveedor.</p>
+                      </div>
+                  </section>
+
+                  <section class="faq-section">
+                      <div class="container">
+                          <h2>Preguntas frecuentes</h2>
+                          <div class="faq-list">
+                              <div class="faq-item" onclick="this.classList.toggle('open')">
+                                  <div class="faq-question">Veri*Factu es obligatorio para todo el mundo? <span>+</span></div>
+                    <div class="faq-answer">Depende del tipo de empresa y actividad. Consulta con tu asesoria para casos especificos.</div>
+                              </div>
+                              <div class="faq-item" onclick="this.classList.toggle('open')">
+                                  <div class="faq-question">Que es un SIF "VERI*FACTU"? <span>+</span></div>
+                                  <div class="faq-answer">Es el Sistema Informatico de Facturacion que cumple con los requisitos de la AEAT para la verificacion de facturas.</div>
+                              </div>
+                              <div class="faq-item" onclick="this.classList.toggle('open')">
+                                  <div class="faq-question">Me vais a llamar? <span>+</span></div>
+                                  <div class="faq-answer">No. Solo recibes el informe PDF por email. Sin llamadas comerciales.</div>
+                              </div>
+                              <div class="faq-item" onclick="this.classList.toggle('open')">
+                                  <div class="faq-question">Compartis mis datos? <span>+</span></div>
+                    <div class="faq-answer">Solo si marcas la casilla de consentimiento para que proveedores te contacten. En caso contrario, tus datos son privados.</div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+                  <section class="cta">
+                      <div class="container">
+                          <h2>Analiza tu tienda y obten tu puntuacion de preparacion para la IA en 30 segundos</h2>
+            <p>Una auditoria rapida y accionable impulsada por IA. Sin registro, sin tarjeta de credito, solo informacion instantanea.</p>
+            <a href="#form" class="btn-white">Empezar diagnostico</a>
+                      </div>
+                  </section>
+
+                  <footer>
+                      <div class="container">
+                          <div class="links">
+                              <a href="#">Inicio</a>
+                              <a href="#form">Pruebalo</a>
+                              <a href="#">Como funciona</a>
+                              <a href="#">Revision</a>
+                          </div>
+                          <p class="copy">&copy; 2026 EcomBriefs. "Veri*Factu" es una referencia al marco de la AEAT. Este diagnostico es orientativo y no constituye asesoramiento fiscal/legal ni certificacion.</p>
+        </div>
+    </footer>
+</body>
+</html>
